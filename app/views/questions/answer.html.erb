@@ -1,11 +1,21 @@
-<h1>The Stupid Coach</h1>
 
+<div class="container">
+  <h1>The Stupid Coach</h1>
+</div>
 
-<p>Your question:</p>
-<p><%= @question %></p>
+<div class="box box-user">
+  <div class="user-question">
+    <h4 id="question">"<%= @question %>"</h4>
+    <p>You</p>
+  </div>
+</div>
 
-
-<p>Coach answer:</p>
-<p><%= @answer %></p>
-
-<a href="/ask">Ask your coach another question</a>
+<div class="box box-coach">
+  <div class="coach-answer">
+    <h4>"<%= @answer %>"</h4>
+    <p>Your coach</p>
+  </div>
+</div>
+<div class="btn-container">
+  <a id="form-btn" href="/ask">Ask your coach another question</a>
+</div>
